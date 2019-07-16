@@ -101,6 +101,13 @@ public class NotificationHelper {
                         .bigPicture(androidIMG)
                         .setBigContentTitle("Notification Updated!"));
 
+
+//        NotificationCompat.Builder notifyBuilder = getNotificationBuilder(context)
+//                .setStyle(new NotificationCompat.InboxStyle()
+//                        .setBigContentTitle("Title").addLine("Here is the first one").addLine("This is the second one").addLine("Yay last one")
+//                            .setSummaryText("Learn More"));
+
+
         //add the new settings to the current notification
         mNotificationManager.notify(NOTIFICATION_ID, notifyBuilder.build());
     }
